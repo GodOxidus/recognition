@@ -8,14 +8,14 @@
 </head>
 <body>
     <script>
-        let rec = new webkitSpeechRecognition()
+        let rec = new webkitSpeechRecognition();
 
-        rec.interimResults = true
-        rec.lang = 'ru-Ru'
+        rec.interimResults = true;
+        rec.lang = 'ru-Ru';
         
-        rec.onresult = (e) => console.log(e);
+        rec.onresult = (e) => {console.log(e);};
 
-        rec.start()
+        rec.start();
     </script>
 </body>
 </html>
